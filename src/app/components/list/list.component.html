@@ -1,0 +1,10 @@
+<section *ngFor="let person of list" class="person">
+    <img src={{person.image}} alt={{person.name}}>
+    <div>
+        <h4>{{person.name}}</h4>
+        <p>{{person.age}} Years</p>
+    </div>
+    <div class="person-delete" (click)="DeletePerson(person.id)">
+        <i class="fa-solid fa-trash"></i>
+    </div>
+</section>
